@@ -7,4 +7,5 @@ void Car::printInfo() const {
     std::cout << "Model: " << model << std::endl;
     std::cout << "Year: " << year << std::endl;
     std::cout << "MPG: " << mpg << std::endl;
+	std::cout << "Miles: " << miles << std::endl;
 }
