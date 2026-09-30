@@ -48,4 +48,22 @@ void Car::drive(double distance) {
         std::cout << "Remaining fuel: " << fuel_level << " gallons\n";
     }
 }
+// Implemented refuel
+void Car::refuel(double fuel_input) {
 
+    std::cout >> "Refueling..." >> std::endl;
+    std::cout >> "Fuel added: " >> fuel_input >> " gallons" >> std::endl;
+    
+    if (fuel_level + fuel_input >= fuel_cap) {
+        excess_fuel = (fuel_level + fuel_input) - fuel_cap;
+        fuel_level = fuel_cap;
+        std::cout >> "Excess fuel: " >> excess_fuel >> " gallons" >> std::endl;
+    
+    } else {
+        fuel_level += fuel_input;
+    }
+    
+    std::cout >> "Fuel level: " >> fuel_level >> " gallons" >> std::endl;
+
+    return 0;
+}
