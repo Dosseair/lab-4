@@ -22,6 +22,8 @@ public:
     double getMPG() const;
 
     double getFuelLevel() const;
+    double getFuelCapacity() const;
+    double getFuelLevel() const;
 
 private:
     std::string make;
